@@ -1,0 +1,32 @@
+{
+  "name": "lsp-for-codex",
+  "version": "0.1.0",
+  "description": "Codex plugin that exposes local Language Server Protocol diagnostics and symbols through MCP.",
+  "type": "module",
+  "homepage": "https://github.com/EpicHigh/lsp-for-codex#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicHigh/lsp-for-codex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/EpicHigh/lsp-for-codex/issues"
+  },
+  "bin": {
+    "lsp-for-codex": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node ./src/mcp-server.js",
+    "detect": "node ./src/cli.js detect",
+    "status": "node ./src/cli.js status",
+    "diagnostics": "node ./src/cli.js diagnostics",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

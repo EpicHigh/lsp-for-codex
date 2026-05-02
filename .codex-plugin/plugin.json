@@ -1,0 +1,46 @@
+{
+  "name": "lsp-for-codex",
+  "version": "0.1.0",
+  "description": "Local Language Server Protocol bridge for Codex: detect projects, install supported servers, collect diagnostics, and query symbols.",
+  "author": {
+    "name": "Local Developer",
+    "email": "noreply@example.com",
+    "url": "https://github.com/EpicHigh/lsp-for-codex"
+  },
+  "homepage": "https://github.com/EpicHigh/lsp-for-codex",
+  "repository": "https://github.com/EpicHigh/lsp-for-codex",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "lsp",
+    "diagnostics",
+    "language-server",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "LSP for Codex",
+    "shortDescription": "Use local language servers from Codex",
+    "longDescription": "LSP for Codex gives Codex MCP tools and workflow guidance for detecting workspace languages, checking or installing supported language servers, collecting LSP diagnostics for edited files, and querying document symbols during refactors. Downloads are explicit and local; language servers run on the user's machine against the selected workspace.",
+    "developerName": "Local Developer",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Local"
+    ],
+    "websiteURL": "https://github.com/EpicHigh/lsp-for-codex",
+    "privacyPolicyURL": "https://openai.com/policies/privacy-policy/",
+    "termsOfServiceURL": "https://openai.com/policies/terms-of-use/",
+    "defaultPrompt": [
+      "Use LSP diagnostics before editing this repo.",
+      "Show LSP status for the workspace.",
+      "Install missing language servers after I approve."
+    ],
+    "brandColor": "#0D9488",
+    "composerIcon": "./assets/lsp-for-codex.svg",
+    "logo": "./assets/lsp-for-codex.svg",
+    "screenshots": []
+  }
+}

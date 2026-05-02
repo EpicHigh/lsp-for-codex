@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "lsp-for-codex": {
+      "command": "node",
+      "args": [
+        "./src/mcp-server.js"
+      ],
+      "cwd": "."
+    }
+  }
+}
